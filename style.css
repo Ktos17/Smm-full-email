@@ -1,0 +1,1056 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,200;0,300;0,600;1,400;1,500;1,700;1,800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@1,500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital@1&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@1,600&display=swap');
+
+body {
+    font-family: Poppins;
+    font-weight: 600;
+    font-size: 18px;
+    height: 100vh;
+    height: 2000px;
+    padding-top: 20px;
+    padding-top: 87px;
+    padding-left: 0px;
+    padding-right: 0px;
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    height: 100%;
+    width: 100%;
+    flex-direction: column;
+}
+
+.top-fixed {
+    position: fixed;
+    padding-top: 12px;
+    left: 0;
+    top: 0;
+    right: 0;
+    background-color: #fff;
+    height: 87px;
+    padding-left: 30px;
+    display: flex;
+    flex: 1;
+    transition: all 0.4s ease-in-out;
+    flex-direction: row;
+    align-items: center;
+    z-index: 10;
+}
+
+.swifto {
+    font-weight: 700;
+    font-size: 26px;
+}
+
+
+.buttons-container {
+    width: 800px;
+    margin-left: 300px;
+    height: 40px;
+    text-wrap: nowrap;
+    display: flex;
+    align-items: center;
+    justify-content: space-between !important;
+    text-align: center;
+    padding-left: 100px;
+    padding-right: 100px;
+    max-width: 500px;
+    font-weight: 500;
+    transition: all 0.4s ease-in-out;
+}
+
+.glowna,
+.uslugi,
+.referencje,
+.o-nas,
+.klienci,
+.kontakt {
+    cursor: pointer;
+    font-family: Roboto;
+    font-weight: 400;
+    transition: all 0.3s ease-in-out;
+}
+
+.glowna:hover,
+.uslugi:hover,
+.referencje:hover,
+.o-nas:hover,
+.klienci:hover,
+.kontakt:hover {
+    color: rgb(158, 63, 253);
+}
+
+.login {
+    margin-left: 240px;
+    background-color: rgb(158, 63, 253);
+    color: #fff;
+    border: none;
+    height: 46px;
+    width: 140px;
+    border-radius: 46px;
+    font-size: 22px;
+    cursor: pointer;
+    transition: all 0.2s ease-in-out;
+    font-family: Roboto;
+    font-weight: 500;
+}
+
+.login:hover {
+    background-color: rgb(23, 22, 64);
+}
+
+.hidden {
+    height: 0px;
+}
+
+.visible {
+    height: 27px;
+}
+
+.second-div-fixed {
+    width: 100%;
+    position: fixed;
+    left: 0;
+    right: 0;
+    top: 67px;
+    background-color: #fff;
+    transition: all 0.4s ease-in-out;
+}
+
+.first-page {
+    width: 100%;
+    height: 1300px;
+    margin-top: -87px;
+}
+
+
+#parallax-image {
+    position: fixed;
+    top: 100;
+    left: 0;
+    width: 100%;
+    height: auto;
+    z-index: -1;
+}
+
+.second-page {
+    background-color: #fff;
+    width: 110%;
+    height: 760px;
+    margin: 0;
+    margin-right: 0px;
+    margin-left: -10px;
+}
+
+.first-page-main-title {
+    transition: all 2s ease-in-out;
+    color: transparent;
+    font-size: 90px;
+    margin-left: 140px;
+    max-width: 700px;
+    margin-top: 140px;
+    font-weight: 600;
+    font-family: Work sans;
+}
+
+.description-first-page {
+    margin-left: 140px;
+    margin-top: -60px;
+    font-size: 26px;
+    font-weight: 500;
+    max-width: 600px;
+    color: transparent;
+    transition: all 2s ease-in-out;
+}
+
+.czytaj-dalej-button {
+    background-color: transparent;
+    color: transparent;
+    border: none;
+    height: 50px;
+    width: 154px;
+    border-radius: 40px;
+    font-size: 20px;
+    margin-left: 140px;
+    margin-top: 20px;
+    cursor: pointer;
+    transition: all 2s ease-in-out;
+}
+
+.czytaj-dalej-button:hover {
+    transition: all 0.2s ease-in-out;
+    background-color: rgb(23, 22, 64);
+}
+
+.uslugi-p {
+    color: transparent;
+    transition: all 2s ease-in-out;
+    margin-left: -60px;
+}
+
+.top-second-page {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    height: 270px;
+    font-size: 20px;
+    flex-direction: column;
+    padding-top: 30px;
+}
+
+.description-second-page {
+    font-size: 30px;
+    max-width: 400px;
+    text-align: center;
+    margin-top: -10px;
+    margin-left: -60px;
+    color: transparent;
+    transition: all 2s ease-in-out;
+}
+
+.uslugi-div {
+    width: 100%;
+    height: 300px;
+    max-width: 1370px;
+    display: flex;
+    align-items: center;
+    padding-left: 50px;
+    justify-content: space-between;
+    padding-right: 100px;
+    padding: 100px;
+    /*
+    justify-content: space-betweeen + padding | margin-right 
+    */
+    margin-top: -60px;
+}
+
+.circle {
+    background-color: transparent;
+    transition: all 2s ease-in-out;
+    border-radius: 50%;
+    height: 70px;
+    width: 70px;
+    position: relative;
+    left: 120px;
+    z-index: 2;
+    top: 10px;
+}
+
+.second-circle {
+    background-color: transparent;
+    transition: all 2s ease-in-out;
+    height: 89px;
+    width: 89px;
+    border-radius: 50%;
+    position: relative;
+    left: 140px;
+    bottom: 40px;
+}
+
+.small-dot {
+    background-color: transparent;
+    transition: all 2s ease-in-out;
+    height: 9px;
+    width: 9px;
+    border-radius: 50%;
+    position: relative;
+    left: 120px;
+    bottom: 34px;
+}
+
+.biznesplany {
+    color: transparent;
+    transition: all 2s ease-in-out;
+    margin-top: -8px;
+    margin-left: 120px;
+}
+
+@keyframes biznesplanyAnimation {
+    from {
+        transform: translateY(-40px);
+    }
+
+    to {
+        transform: translateY(0px);
+    }
+}
+
+.biznesplany-animation {
+    animation-name: biznesplanyAnimation;
+    animation-duration: 1.4s;
+    animation-timing-function: ease-in-out;
+}
+
+.description-second-page-first-div {
+    text-align: center;
+    max-width: 400px;
+    font-family: Roboto;
+    font-weight: 500;
+    color: transparent;
+    transition: all 2s ease-in-out;
+}
+
+@keyframes descriptionSecondPageFirstDivAnimation {
+    from {
+        transform: translateY(-40px);
+    }
+
+    to {
+        transform: translateY(0px);
+    }
+}
+
+.description-second-page-first-div-animation {
+    animation-name: descriptionSecondPageFirstDivAnimation;
+    animation-duration: 1.4s;
+    animation-timing-function: ease-in-out;
+}
+
+
+.second-icon-div {
+    width: 403px;
+    height: 269px;
+}
+
+.third-icon-div {
+    width: 403px;
+    height: 269px;
+}
+
+.second-small-dot {
+    height: 9px;
+    width: 9px;
+    background-color: transparent;
+    transition: all 2s ease-in-out;
+    position: relative;
+    border-radius: 50%;
+    top: 40px;
+    left: 190px;
+}
+
+.rotated-canva {
+    background-color: transparent;
+    transition: all 2s ease-in-out;
+    width: 16px;
+    height: 64px;
+    border-radius: 12px;
+    transform: rotate(140deg);
+    position: relative;
+    top: 90px;
+    left: 170px;
+}
+
+.second-rotated-canva {
+    background-color: transparent;
+    transition: all 2s ease-in-out;
+    width: 16px;
+    height: 130px;
+    position: relative;
+    transform: rotate(220deg);
+    border-radius: 12px;
+    top: -32px;
+    left: 223px;
+}
+
+.uslugi-ksiegowe {
+    padding-left: 130px;
+    margin-top: -30px;
+    color: transparent;
+    transition: all 2s ease-in-out;
+}
+
+@keyframes uslugiKsiegoweAnimation {
+    from {
+        transform: translateY(-40px);
+    }
+
+    to {
+        transform: translateY(0px);
+    }
+}
+
+.uslugi-ksiegowe-animation {
+    animation-name: uslugiKsiegoweAnimation;
+    animation-timing-function: ease-in-out;
+    animation-duration: 1.4s;
+}
+
+.description-second-page-second-div {
+    font-family: Roboto;
+    font-weight: 500;
+    text-align: center;
+    margin-top: -12px;
+    color: transparent;
+    transition: all 2s ease-in-out;
+}
+
+@keyframes description-second-page-second-div-animation {
+    from {
+        transform: translateY(-40px);
+    }
+
+    to {
+        transform: translateY(0px);
+    }
+}
+
+.description-second-page-second-div {
+    animation-name: description-second-page-second-div-animation;
+    animation-duration: 1.4s;
+    animation-timing-function: ease-in-out;
+}
+
+.first-canva-third-page {
+    background-color: transparent;
+    transition: all 2s ease-in-out;
+    width: 47px;
+    height: 47px;
+    position: relative;
+    top: 60px;
+    left: 160px;
+    z-index: 2;
+}
+
+.second-canva-third-page {
+    background-color: transparent;
+    transition: all 2s ease-in-out;
+    width: 67px;
+    height: 67px;
+    position: relative;
+    top: 40px;
+    left: 180px;
+}
+
+.third-dot-third-page {
+    background-color: transparent;
+    transition: all 2s ease-in-out;
+    height: 9px;
+    width: 9px;
+    border-radius: 50%;
+    position: relative;
+    top: 50px;
+    left: 254px;
+}
+
+.optymalizacja-finansow {
+    margin-top: 56px;
+    margin-left: 100px;
+    color: transparent;
+    transition: all 2s ease-in-out;
+}
+
+@keyframes optymalizacjaFinansowAnimation {
+    from {
+        transform: translateY(-40px);
+    }
+
+    to {
+        transform: translateY(0px);
+    }
+}
+
+.optymalizacja-finansow-animation {
+    animation-name: optymalizacjaFinansowAnimation;
+    animation-duration: 1.4s;
+    animation-timing-function: ease-in-out;
+}
+
+.description-third-page {
+    text-align: center;
+    font-family: Roboto;
+    font-weight: 500;
+    position: relative;
+    bottom: 14px;
+    color: transparent;
+    transition: all 2s ease-in-out;
+}
+
+@keyframes descriptionThirdPage {
+    from {
+        transform: translateY(-40px);
+    }
+
+    to {
+        transform: translateY(0px);
+    }
+}
+
+.description-third-page-animation {
+    animation-name: descriptionThirdPage;
+    animation-duration: 1.4s;
+    animation-timing-function: ease-in-out;
+}
+
+@keyframes DOMContentLoadedAnimation {
+    from {
+        transform: translateY(-60px);
+    }
+
+    to {
+        transform: translateX(0px);
+    }
+}
+
+.main-title-animation {
+    animation-name: DOMContentLoadedAnimation;
+    animation-duration: 1s;
+    animation-timing-function: ease-in-out;
+    animation-delay: 0s;
+}
+
+.third-div {
+    background-color: #16163f;
+    width: 100%;
+    height: 460px;
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+    z-index: 3;
+    position: relative;
+}
+
+.liczby-to-nasza-specjalnosc {
+    color: transparent;
+    transition: all 2s ease-in-out;
+    font-size: 38px;
+    margin-left: 530px;
+    margin-top: 100px;
+}
+
+@keyframes liczbyToNaszaSpecjalnoscAnimation {
+    from {
+        transform: translateY(-40px);
+    }
+
+    to {
+        transform: translateY(0px);
+    }
+}
+
+.liczby-to-nasza-specjalnosc-animation {
+    animation-name: liczbyToNaszaSpecjalnoscAnimation;
+    animation-timing-function: ease-in-out;
+    animation-duration: 1.4s;
+}
+
+.four {
+    color: transparent;
+    transition: all 2s ease-in-out;
+    font-size: 78px;
+    margin-left: 480px;
+    margin-top: 30px;
+}
+
+@keyframes fourAnimation {
+    from {
+        transform: translateY(-40px);
+    }
+
+    to {
+        transform: translateY(0px);
+    }
+}
+
+.four-animation {
+    animation-name: fourAnimation;
+    animation-duration: 1.4s;
+    animation-timing-function: ease-in-out;
+}
+
+.lata-doswiadczenia {
+    color: transparent;
+    transition: all 2s ease-in-out;
+    font-size: 18px;
+    margin-top: -70px;
+    margin-left: 420px;
+}
+
+.trzynascie {
+    color: transparent;
+    transition: all 2s ease-in-out;
+    font-size: 78px;
+    position: relative;
+    bottom: 250px;
+    left: 1040px;
+}
+
+.ekspertow {
+    position: relative;
+    bottom: 335px;
+    left: 1034px;
+    color: transparent;
+    transition: all 2s ease-in-out;
+    font-size: 18px;
+}
+
+.dot {
+    background-color: transparent;
+    transition: all 2s ease-in-out;
+    height: 9px;
+    width: 9px;
+    border-radius: 50%;
+    position: relative;
+    left: 800px;
+    bottom: 110px;
+    color: transparent;
+}
+
+.fourth-div {
+    width: 100%;
+    height: 828px;
+    display: flex;
+    flex: 1;
+    flex-direction: row;
+}
+
+.o-nas-2 {
+    color: transparent;
+    transition: all 2s ease-in-out;
+    font-family: Poppins;
+    font-size: 22px;
+    margin-left: 200px;
+    margin-top: 100px;
+}
+
+.nasi-eksperci {
+    color: transparent;
+    transition: all 2s ease-in-out;
+    font-family: Poppins;
+    font-size: 32px;
+    margin-left: 200px;
+    max-width: 300px;
+}
+
+.text {
+    width: 400px;
+    margin-left: 200px;
+    font-family: Roboto;
+    font-weight: 400;
+    color: transparent;
+    transition: all 2s ease-in-out;
+}
+
+.right {
+    width: 50%;
+    height: 648px;
+    margin-left: 200px;
+    display: flex;
+    flex-direction: column;
+    padding-left: 200px;
+}
+
+.second-background {
+    width: 47%;
+    height: auto;
+    z-index: 0;
+    position: absolute;
+    margin-left: -20px;
+    margin-top: -100px;
+    transform: scale(0.5);
+}
+
+.fifth-div {
+    width: 100%;
+    height: 560px;
+    display: flex;
+    flex-direction: row;
+    z-index: 3;
+    position: relative;
+}
+
+.left {
+    width: 50%;
+    height: 100%;
+    margin: 0;
+}
+
+.right-parallax {
+    width: 50%;
+    height: 100%;
+}
+
+.kontakt-p {
+    color: rgb(158, 63, 253);
+    font-family: Poppins;
+    font-weight: 600;
+    font-size: 20px;
+    margin-left: 160px;
+    margin-top: 120px;
+}
+
+.wspolpracuj-z-nami {
+    font-size: 34px;
+    margin-left: 160px;
+    margin-top: 0px;
+}
+
+.email {
+    margin-left: 160px;
+    font-weight: 500;
+}
+
+@keyframes goUpAnimation {
+    from {
+        transform: translateY(-40px);
+    }
+
+    to {
+        transform: translateY(0px);
+    }
+}
+
+.go-up-animation-o-nas {
+    animation-name: goUpAnimation;
+    animation-duration: 1.4s;
+    animation-timing-function: ease-in;
+}
+
+@keyframes nasiEksperci-animation {
+    from {
+        transform: translateY(-40px);
+    }
+
+    to {
+        transform: translateY(0px);
+    }
+}
+
+.nasi-eksperci-animation {
+    animation-name: nasiEksperci-animation;
+    animation-duration: 1.4s;
+    animation-timing-function: ease-in-out;
+}
+
+@keyframes textAnimation {
+    from {
+        transform: translateY(-40px);
+    }
+
+    to {
+        transform: translateX(0px);
+    }
+}
+
+.text-animation {
+    animation-name: textAnimation;
+    animation-duration: 1.4s;
+    animation-timing-function: ease-in-out;
+}
+
+@keyframes uslugiAnimation {
+    from {
+        transform: translateY(-40px);
+    }
+
+    to {
+        transform: translateY(0px);
+    }
+}
+
+.uslugi-p-animation {
+    animation-name: uslugiAnimation;
+    animation-duration: 1.4s;
+    animation-timing-function: ease-in-out;
+}
+
+@keyframes descriptionSecondPageAnimation {
+    from {
+        transform: translateY(-40px);
+    }
+
+    to {
+        transform: translateY(0px);
+    }
+}
+
+.description-second-page-animation {
+    animation-name: descriptionSecondPageAnimation;
+    animation-duration: 1.4s;
+    animation-timing-function: ease-in-out;
+}
+
+.facebook {
+    height: 30px;
+    cursor: pointer;
+    margin-left: 160px;
+    margin-top: 30px;
+}
+
+.instagram,
+.twitter {
+    height: 30px;
+    cursor: pointer;
+    margin-left: 20px;
+}
+
+.instagram:active,
+.facebook:active,
+.twitter:active {
+    transition: all 0.2s ease-in-out;
+    opacity: 0.7;
+}
+
+.imie,
+.nazwisko,
+.email-p,
+.wiadomosc {
+    font-weight: 300;
+    font-size: 16px;
+}
+
+.name,
+.nazwisko-input,
+.email-input,
+.wiadomosc-input {
+    border: none;
+    border-bottom: 2px solid gray;
+    width: 200px;
+    height: 25px;
+    outline: none;
+    font-size: 18px;
+    padding: 3px 3px 3px 0px;
+    color: #000;
+    font-weight: 300;
+}
+
+.name:focus {
+    border-bottom: 2px solid rgb(158, 63, 253);
+}
+
+.top-inputs {
+    display: flex;
+    flex-direction: column;
+}
+
+.imie-div {
+    display: flex;
+    flex-direction: column;
+}
+
+.top {
+    margin-top: 60px;
+    display: flex;
+    flex-direction: row;
+}
+
+.nazwisko-div {
+    margin-left: 50px;
+}
+
+.nazwisko-input:focus {
+    border-bottom: 2px solid rgb(158, 63, 253);
+}
+
+.email-div {
+    margin-top: 20px;
+    width: 454px;
+    height: 100px;
+}
+
+.email-input:focus {
+    border-bottom: 2px solid rgb(158, 63, 253);
+}
+
+.wiadomosc-input,
+.email-input {
+    width: 100%;
+}
+
+.wiadomosc-div {
+    max-width: 458px;
+    height: 200px;
+}
+
+.wiadomosc-input:focus {
+    border-bottom: 2px solid rgb(158, 63, 253);
+}
+
+.przeslij {
+    background-color: rgb(158, 63, 253);
+    color: #fff;
+    border: none;
+    width: 140px;
+    height: 50px;
+    border-radius: 60px;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+.przeslij:hover {
+    transition: all 0.2s ease-in-out;
+    background-color: #16163f;
+}
+
+.bottom {
+    background-image: url('last-background.webp');
+    z-index: 13;
+}
+
+.pasek {
+    width: 100%;
+    background-color: #16163f;
+    height: 700px;
+    z-index: 3;
+    position: relative;
+}
+
+.message-icon {
+    position: fixed;
+    background-color: rgb(22, 22, 63);
+    height: 60px;
+    width: 60px;
+    top: 640px;
+    left: 1440px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    z-index: 4;
+}
+
+.message-icon {
+    color: #fff;
+}
+
+.chat {
+    position: fixed;
+    height: 440px;
+    width: 300px;
+    background-color: #fff;
+    top: 260px;
+    left: 1200px;
+    border-radius: 20px;
+    z-index: 5;
+    padding: 0;
+    display: none;
+}
+
+.top-div {
+    margin-top: 16px;
+    display: flex;
+    flex: 1;
+    flex-direction: row-reverse;
+    background-color: #fff;
+}
+
+.close-icon {
+    margin-right: 14px;
+    cursor: pointer;
+}
+
+.left-div {
+    margin-left: 0px;
+    display: flex;
+    flex-direction: column;
+}
+
+.swifto-p {
+    margin-left: 10px;
+}
+
+.nwm {
+    display: flex;
+    flex-direction: row;
+}
+
+.middle-dot {
+    margin-top: -49px;
+    color: green;
+    margin-right: 0px;
+    font-size: 62px;
+    margin-left: 8px;
+}
+
+.odpowiemy {
+    text-wrap: nowrap;
+    font-size: 14px;
+    font-family: Roboto;
+    font-weight: 400;
+    margin-top: -10px;
+    margin-left: 4px;
+}
+
+.bottom-div {
+    border: 2px solid red;
+    width: 100%;
+    height: 210px;
+}
+
+.message-input-div {
+    width: 100%;
+    height: 40px;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+    border: 2px solid blue;
+}
+
+.message-input {
+    width: 276px;
+    height: 40px;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+    border: none;
+    outline: none;
+    padding-left: 20px;
+}
+
+.sidebar-icon {
+    visibility: hidden;
+}
+
+@media (max-width: 376px) {
+    .glowna,
+    .uslugi,
+    .o-nas,
+    .referencje,
+    .klienci,
+    .kontakt,
+    .buttons-container {
+        display: none;
+    }
+
+    .sidebar-icon {
+        visibility: visible;
+    }
+
+    .login {
+        margin-left: 70px;
+        width: 120px;
+        height: 42px;
+    }
+
+    .sidebar-icon {
+        display: block;
+        margin-left: 30px;
+        transform: scale(1.9);
+    }
+
+    .first-page-main-title {
+        font-size: 42px;
+        margin-left: 20px;
+        text-align: center;
+        font-weight: 900;
+    }
+
+    .description-first-page {
+        text-align: center;
+        margin-left: 20px;
+        margin-top: 40px;
+    }
+
+    .czytaj-dalej-button {
+        margin-left: 114px;
+    }
+
+    .main-background {
+        margin-top: 400px;
+        max-width: 426px;
+    }
+}
